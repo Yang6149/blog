@@ -1,0 +1,17 @@
+package com.yang.blog.service;
+
+import com.yang.blog.po.Tag;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+public interface TagService {
+    Tag saveTag(Tag tag);
+
+    Tag getTag(Long id);
+
+    Page<Tag> listTag(Pageable pageable);
+
+    Tag uptateTag(Long id,Tag tag);
+
+    void deleteTag(Long id);
+}
