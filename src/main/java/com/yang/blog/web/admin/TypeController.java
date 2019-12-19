@@ -48,7 +48,13 @@ public class TypeController {
         if(result.hasErrors()){
             return "admin/types-input";
         }
-        Type t = typeService.saveType(type);
+        Type t=null;
+        if(type.getId()!=null){
+            t=typeService.uptateType(type.getId(),type);
+        }else{
+            t=typeService.saveType(type);
+        }
+
         if(t!=null){
             attributes.addFlashAttribute("message","操作成功");
         }else{

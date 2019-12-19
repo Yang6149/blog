@@ -38,7 +38,7 @@ public class TagController {
 
     @PostMapping("/tags")
     public String post(@Valid Tag tag, BindingResult result, RedirectAttributes attributes){
-        if(tagService.getTag(tag.getId())!=null){
+        if(tag.getId()!=null){
             tagService.uptateTag(tag.getId(),tag);
         }else{
             tagService.saveTag(tag);

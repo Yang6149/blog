@@ -5,6 +5,7 @@ import com.yang.blog.po.User;
 import com.yang.blog.service.BlogService;
 import com.yang.blog.service.TagService;
 import com.yang.blog.service.TypeService;
+import com.yang.blog.vo.BlogQuery;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,9 @@ import java.util.Date;
 @Controller
 @RequestMapping("/admin")
 public class BlogController {
+    private final String BLOGS="admin/blogs";
+    private final String REDIRECT="redirect:/admin/blogs";
+    private final String INPUT="admin/blogs-input";
     Logger logger= LoggerFactory.getLogger(this.getClass());
     @Autowired
     private BlogService blogService;
@@ -36,15 +40,15 @@ public class BlogController {
     @Autowired
     private TypeService typeService;
     @GetMapping("/blogs")
-    public String list(@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable,Blog blog, Model model){
+    public String list(@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable, BlogQuery blog, Model model){
         System.out.println(blogService.listBlog(pageable,blog).getContent());
         model.addAttribute("types",typeService.listType(pageable));
         model.addAttribute("page",blogService.listBlog(pageable,blog));
         logger.info("访问list");
-        return "admin/blogs";
+        return BLOGS;
     }
     @PostMapping("/blogs/search")
-    public String search(@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable,Blog blog, Model model){
+    public String search(@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable,BlogQuery blog, Model model){
         System.out.println(blogService.listBlog(pageable,blog).getContent());
         model.addAttribute("page",blogService.listBlog(pageable,blog));
         logger.info("查找blogs");
@@ -57,7 +61,7 @@ public class BlogController {
         model.addAttribute("tags",tagService.listTag(pageable).getContent());
         model.addAttribute("types",typeService.listType(pageable).getContent());
         logger.info("增加blog");
-        return "admin/blogs-input";
+        return INPUT;
     }
 
     @PostMapping("/blogs")
@@ -67,15 +71,18 @@ public class BlogController {
             logger.warn("result.hasErrors");
             logger.warn(blog.getTags().toString());
             logger.warn(result.getFieldErrors().toString());
-            return "admin/blogs-input";
+            return INPUT;
         }
-
+        Blog b=null;
         blog.setType(typeService.getType(blog.getType().getId()));
         blog.setTags(tagService.listTag(blog.getTagIds()));
-        blog.setUpdateTime(new Date());
-        blog.setUser((User) session.getAttribute("user"));
-        Blog b=blogService.saveBlog(blog);
+        if(blog.getId()!=null){//修改
+            b=blogService.updateBlog(blog.getId(),blog);
+        }else{//新增
 
+            blog.setUser((User) session.getAttribute("user"));
+            b=blogService.saveBlog(blog);
+        }
 
         if(b!=null){
             attributes.addFlashAttribute("message","操作成功");
@@ -83,7 +90,7 @@ public class BlogController {
             attributes.addFlashAttribute("message","操作失败");
         }
         logger.info("提交增加blog");
-        return "redirect:/admin/blogs";
+        return REDIRECT;
 
     }
     @GetMapping("/blogs/{id}/input")
@@ -92,14 +99,14 @@ public class BlogController {
         model.addAttribute("tags",tagService.listTag(pageable).getContent());
         model.addAttribute("types",typeService.listType(pageable).getContent());
         logger.info("修改blog");
-        return "admin/blogs-input";
+        return INPUT;
     }
 
     @GetMapping("/blogs/{id}/delete")
     public String delete(@PathVariable("id") Long id){
         blogService.deleteBlog(id);
 
-        return "redirect:/admin/blogs";
+        return REDIRECT;
     }
 
 }
