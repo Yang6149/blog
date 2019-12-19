@@ -1,0 +1,11 @@
+# blog
+### blog项目
+# 前端
+  * semantic
+  * 各种插件
+  * thymeleaf
+# 后端
+  * springboot
+  * jpa
+  * aop
+  * mysql
