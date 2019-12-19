@@ -6,7 +6,12 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
+@Service
 public class TagServiceImpl implements TagService {
     /**
      * 获取Repository
@@ -45,6 +50,21 @@ public class TagServiceImpl implements TagService {
         return tagRepository.findAll(pageable);
     }
 
+    @Override
+    public List<Tag> listTag(String str) {
+        return tagRepository.findAllById(strConver2List(str));
+    }
+    private List<Long> strConver2List(String str){
+        List<Long> list=new ArrayList<>();
+        String tags[]=str.split(",");
+        for(String i:tags){
+            list.add(Long.parseLong(i));
+        }
+
+        return list;
+    }
+
+
     /**
      * Update Tag
      * @param id
@@ -55,7 +75,7 @@ public class TagServiceImpl implements TagService {
     public Tag uptateTag(Long id, Tag tag) {
         Tag t=getTag(id);
         BeanUtils.copyProperties(tag,t);
-        return t;
+        return tagRepository.save(t);
     }
 
     /**

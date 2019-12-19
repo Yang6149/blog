@@ -1,6 +1,7 @@
 package com.yang.blog.po;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -11,17 +12,20 @@ public class Blog {
     @Id
     @GeneratedValue
     private Long id;
-
+    @NotBlank(message = "title 不能为空")
     private String title;
+    @NotBlank(message = "内容不能为空")
     private String content;
     private String firstPicture;
     private String flag;
     private Integer views;
+    private String description;
     private boolean appreciation;
     private boolean shareStatement;
     private boolean commentabled;
     private boolean published;
-    private boolean recommened;
+    private boolean recommend;
+    private String tagIds;
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
     @Temporal(TemporalType.TIMESTAMP)
@@ -39,8 +43,24 @@ public class Blog {
         return tags;
     }
 
+    public String getTagIds() {
+        return tagIds;
+    }
+
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
+    }
+
     public void setTags(List<Tag> tags) {
         this.tags = tags;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public User getUser() {
@@ -75,7 +95,7 @@ public class Blog {
                 ", shareStatement=" + shareStatement +
                 ", commentabled=" + commentabled +
                 ", published=" + published +
-                ", recommened=" + recommened +
+                ", recommend=" + recommend +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
                 '}';
@@ -169,12 +189,12 @@ public class Blog {
         this.published = published;
     }
 
-    public boolean isRecommened() {
-        return recommened;
+    public boolean isRecommend() {
+        return recommend;
     }
 
-    public void setRecommened(boolean recommened) {
-        this.recommened = recommened;
+    public void setRecommend(boolean recommend) {
+        this.recommend = recommend;
     }
 
     public Date getCreateTime() {

@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -43,10 +44,11 @@ public class TypeController {
     }
     @PostMapping("/types")
     public String post(@Valid Type type, BindingResult result,RedirectAttributes attributes){
-        Type t = typeService.saveType(type);
+
         if(result.hasErrors()){
             return "admin/types-input";
         }
+        Type t = typeService.saveType(type);
         if(t!=null){
             attributes.addFlashAttribute("message","操作成功");
         }else{
@@ -54,6 +56,18 @@ public class TypeController {
 
         }
 
+        return "redirect:/admin/types";
+    }
+    @GetMapping("/types/{id}/input")
+    public String update(@PathVariable("id")Long id, Model model){
+        Type t=typeService.getType(id);
+        model.addAttribute("type",t);
+        return "admin/types-input";
+    }
+
+    @GetMapping("/types/{id}/delete")
+    public String delete(@PathVariable("id")Long id){
+        typeService.deleteType(id);
         return "redirect:/admin/types";
     }
 
