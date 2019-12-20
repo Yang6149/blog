@@ -16,7 +16,9 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import javax.xml.crypto.Data;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
@@ -70,6 +72,34 @@ public class BlogServiceImpl implements BlogService{
         BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
         b.setUpdateTime(new Date());
         return repository.save(b);
+    }
+
+    @Override
+    public List<Blog> listBlogByYear(int year) {
+        return null;
+    }
+    //    @Override
+//    public List<Blog> listBlogByYear(int year) {
+//        long time=new Date(2019,0,0).getTime();
+//        long time2=new Date(2020,0,0).getTime();
+//        List<Blog> list=new ArrayList<>();
+//        for(Blog blog:repository.findAll()){
+//            if(blog.getCreateTime().getTime()>time&&blog.getCreateTime().getTime()<time2){
+//                list.add(blog);
+//            }
+//        }
+//        return list;
+//    }
+
+
+    @Override
+    public List<Blog> listBlog() {
+        return repository.findAll();
+    }
+
+    @Override
+    public int count() {
+        return (int) repository.count();
     }
 
 

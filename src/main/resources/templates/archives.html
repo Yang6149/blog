@@ -64,7 +64,7 @@
                          <span th:text="${blog.title}">关于如何学习JavaEE</span>
                          <div class="ui teal basic small label m-margin-left" th:text="${#dates.format(blog.updateTime,'MMMdd')}">10月01</div>
                      </span>
-                          <div class="ui orange basic label" th:text="${blog.flag}">原创</div>
+                          <div class="ui orange basic label" th:text="${blog.flag}?'原创'">原创</div>
                 </a>
                 <!--/*-->
                 <a href="#" target="_blank" class="item">
