@@ -3,6 +3,7 @@ package com.yang.blog.service;
 import com.yang.blog.dao.BlogRepository;
 import com.yang.blog.po.Blog;
 import com.yang.blog.po.Type;
+import com.yang.blog.util.MyBeanUtils;
 import com.yang.blog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,7 +67,7 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public Blog updateBlog(Long id, Blog blog) {
         Blog b=repository.getOne(id);
-        BeanUtils.copyProperties(blog,b);
+        BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
         b.setUpdateTime(new Date());
         return repository.save(b);
     }
