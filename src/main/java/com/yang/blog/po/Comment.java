@@ -12,6 +12,7 @@ public class Comment {
     @GeneratedValue
     private Long id;
     private String nickname;
+    private boolean adminComment;
     private String email;
     private String content;
     private String avatar;
@@ -37,6 +38,14 @@ public class Comment {
                 ", replyComments=" + replyComments +
                 ", parentComment=" + parentComment +
                 '}';
+    }
+
+    public boolean isAdminComment() {
+        return adminComment;
+    }
+
+    public void setAdminComment(boolean adminComment) {
+        this.adminComment = adminComment;
     }
 
     public List<Comment> getReplyComments() {

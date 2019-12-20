@@ -85,6 +85,7 @@ public class Blog {
     @Override
     public String toString() {
         return "Blog{" +
+                "user"+user+
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +

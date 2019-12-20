@@ -54,6 +54,12 @@ public class TagServiceImpl implements TagService {
     public List<Tag> listTag(String str) {
         return tagRepository.findAllById(strConver2List(str));
     }
+
+    @Override
+    public List<Tag> listTag() {
+        return tagRepository.findAll();
+    }
+
     private List<Long> strConver2List(String str){
         List<Long> list=new ArrayList<>();
         String tags[]=str.split(",");
