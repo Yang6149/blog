@@ -19,7 +19,7 @@
                 <h2 class="ui teal header item">小小叶儿</h2>
                 <a href="#"  class="m-item item m-mobile-hide" ><i class="small home icon"></i>首页</a>
                 <a href="#"  class="m-item item m-mobile-hide " ><i class="small idea icon"></i>分类</a>
-                <a href="#" class="m-item item m-mobile-hide active"><i class="small tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide "><i class="small tags icon"></i>标签</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="small clone icon"></i>归档</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="small info icon"></i>站长信息</a>
                 <div class="right m-item item m-mobile-hide">
@@ -45,7 +45,7 @@
             <div class="ui stackable grid">
                 <div class="eleven wide column">
                     <div class="ui  segment">
-                        <img src="../static/images/me2.png" th:src="@{/images/me2.png}" alt="" class="ui rounded image">
+                        <img src="../static/images/me2.png" th:src="@{/images/me2.jpg}" alt="" class="ui rounded image">
                     </div>
                 </div>
                 <div class="five wide column">
@@ -53,19 +53,19 @@
                         <div class="ui header">关于作者</div>
                     </div>
                     <div class="ui attached segment">
-                        <p class="m-text">博主，原名叶仁平,是一名springboot爱好者，是一名正在努力奋斗的学生,一个终生学习者。一直徘徊在Java的编程世界的里。</p>
-                        <p class="m-text">对生活充满热情，喜欢唱歌、旅行、运动、热爱编程，梦想的是可以在年轻时游遍全世界...</p>
+                        <p class="m-text" th:text="#{in}">一直徘徊在Java的编程世界的里。</p>
+
                     </div>
                     <div class="ui attached segment">
                         <div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
                         <div class="ui orange basic left pointing label m-margin-tb-tiny">思考</div>
                         <div class="ui orange basic left pointing label m-margin-tb-tiny">运动</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">写作</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">旅游</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">唱歌</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">音乐</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">阅读</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">躺尸</div>
                     </div>
                     <div class="ui attached segment">
-                        <h4 class="ui header">技术标签</h4>
+                        <h4 class="ui header">本站技术标签</h4>
                         <div class="ui teal basic left pointing label m-margin-tb-tiny">SpringBoot</div>
                         <div class="ui teal basic left pointing label m-margin-tb-tiny">MyBatis</div>
                         <div class="ui teal basic left pointing label m-margin-tb-tiny">SpringMVC</div>
@@ -74,7 +74,6 @@
                         <div class="ui teal basic left pointing label m-margin-tb-tiny">Spring</div>
                         <div class="ui teal basic left pointing label m-margin-tb-tiny">JavaScript</div>
                         <div class="ui teal basic left pointing label m-margin-tb-tiny">MySQL</div>
-                        <div class="ui teal basic left pointing label m-margin-tb-tiny">Oracle</div>
                         <div class="ui teal basic left pointing label m-margin-tb-tiny">Redis</div>
                         <div class="ui teal basic left pointing label m-margin-tb-tiny">Linux</div>
                         <div class="ui teal basic left pointing label m-margin-tb-tiny">jQuery</div>

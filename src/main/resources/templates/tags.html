@@ -35,6 +35,7 @@
                 <i class="sidebar icon"></i>
             </a>
             <!--*/-->
+        </div>
     </nav>
 
     <!--中间内容-->
@@ -53,10 +54,10 @@
                 </div>
             </div>
             <!--分类列表区域-->
-            <div class="ui attached segment m-padded-tb-large   ">
-                <a href="#" th:href="@{/tags/{id}(id=${tag.id})}"  th:classappend="${tag.id==avtiveTagId }? 'teal'"  class="ui  basic center pointing large label " th:each="tag : ${tags}">
-                    <span th:text="${tag.name}">JavaEE</span>
-                    <div class="detail" th:text="${#arrays.length(tag.blogs)}">23</div>
+            <div class="ui attached segment m-padded-tb-large   " >
+                <a href="" class="ui  basic center pointing large label" th:classappend="${tag.id==avtiveTagId}?'teal'" th:href="@{/tags/{id}(id=${tag.id})}" th:each="tag:${tags}" >
+                    <span th:text="${tag.name}"></span>
+                    <div class="detail" th:text="${tag.getBlogs().size()}">23</div>
                 </a>
                 <!--/*-->
                 <a href="" class="ui  basic center pointing large label ">

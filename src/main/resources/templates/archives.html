@@ -36,6 +36,7 @@
                 <i class="sidebar icon"></i>
             </a>
             <!--*/-->
+        </div>
     </nav>
 
 
@@ -56,84 +57,85 @@
             </div>
             <!--按照年份归档内容-->
             <th:block th:each="item : ${archiveMap}">
-            <h3 class="ui center aligned header" th:text="${item.key}">2019</h3>
-            <div class="ui fluid vertical menu">
-                <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog: ${item.value}">
-                     <span>
-                         <i class=" teal tiny circle icon "></i>
-                         <span th:text="${blog.title}">关于如何学习JavaEE</span>
-                         <div class="ui teal basic small label m-margin-left" th:text="${#dates.format(blog.updateTime,'MMMdd')}">10月01</div>
-                     </span>
-                          <div class="ui orange basic label" th:text="${blog.flag}?'原创'">原创</div>
-                </a>
+                <h3 class="ui center aligned header" th:text="${item.key}">2019</h3>
+                <div class="ui fluid vertical menu">
+                    <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog: ${item.value}">
+                         <span>
+                             <i class=" teal tiny circle icon "></i>
+                             <span th:text="${blog.title}">关于如何学习JavaEE</span>
+                             <div class="ui teal basic small label m-margin-left" th:text="${#dates.format(blog.updateTime,'MMMdd')}">10月01</div>
+                         </span>
+                              <div class="ui orange basic label" th:text="${blog.flag}?'原创'">原创</div>
+                    </a>
+                    <!--/*-->
+                    <a href="#" target="_blank" class="item">
+                         <span>
+                             <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
+                             <div class="ui teal basic small label m-margin-left">10月01</div>
+                         </span>
+                        <div class="ui orange basic  label">原创</div>
+                    </a>
+                    <a href="#" target="_blank" class="item">
+                         <span>
+                             <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
+                             <div class="ui teal basic small label m-margin-left">10月01</div>
+                         </span>
+                        <div class="ui orange basic  label">原创</div>
+                    </a>
+                    <!--*/-->
+                </div>
                 <!--/*-->
-                <a href="#" target="_blank" class="item">
-                     <span>
-                         <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
-                         <div class="ui teal basic small label m-margin-left">10月01</div>
-                     </span>
-                    <div class="ui orange basic  label">原创</div>
-                </a>
-                <a href="#" target="_blank" class="item">
-                     <span>
-                         <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
-                         <div class="ui teal basic small label m-margin-left">10月01</div>
-                     </span>
-                    <div class="ui orange basic  label">原创</div>
-                </a>
-                <!--*/-->
-            </div>
-            <!--/*-->
-            <h3 class="ui center aligned header">2018</h3>
-            <div class="ui fluid vertical menu">
-                <a href="#" target="_blank" class="item">
-                     <span>
-                         <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
-                         <div class="ui teal basic small label m-margin-left">10月01</div>
-                     </span>
-                    <div class="ui orange basic  label">原创</div>
-                </a>
-                <a href="#" target="_blank" class="item">
-                     <span>
-                         <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
-                         <div class="ui teal basic small label m-margin-left">10月01</div>
-                     </span>
-                    <div class="ui orange basic  label">原创</div>
-                </a>
-                <a href="#" target="_blank" class="item">
-                     <span>
-                         <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
-                         <div class="ui teal basic small label m-margin-left">10月01</div>
-                     </span>
-                    <div class="ui orange basic  label">原创</div>
-                </a>
-            </div>
+                <h3 class="ui center aligned header">2018</h3>
+                <div class="ui fluid vertical menu">
+                    <a href="#" target="_blank" class="item">
+                         <span>
+                             <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
+                             <div class="ui teal basic small label m-margin-left">10月01</div>
+                         </span>
+                        <div class="ui orange basic  label">原创</div>
+                    </a>
+                    <a href="#" target="_blank" class="item">
+                         <span>
+                             <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
+                             <div class="ui teal basic small label m-margin-left">10月01</div>
+                         </span>
+                        <div class="ui orange basic  label">原创</div>
+                    </a>
+                    <a href="#" target="_blank" class="item">
+                         <span>
+                             <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
+                             <div class="ui teal basic small label m-margin-left">10月01</div>
+                         </span>
+                        <div class="ui orange basic  label">原创</div>
+                    </a>
+                </div>
 
-            <h3 class="ui center aligned header">2017</h3>
-            <div class="ui fluid vertical menu">
-                <a href="#" target="_blank" class="item">
-                     <span>
-                         <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
-                         <div class="ui teal basic small label m-margin-left">10月01</div>
-                     </span>
-                    <div class="ui orange basic  label">原创</div>
-                </a>
-                <a href="#" target="_blank" class="item">
-                     <span>
-                         <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
-                         <div class="ui teal basic small label m-margin-left">10月01</div>
-                     </span>
-                    <div class="ui orange basic  label">原创</div>
-                </a>
-                <a href="#" target="_blank" class="item">
-                     <span>
-                         <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
-                         <div class="ui teal basic small label m-margin-left">10月01</div>
-                     </span>
-                    <div class="ui orange basic  label">原创</div>
-                </a>
-            </div>
-            <!--*/-->
+                <h3 class="ui center aligned header">2017</h3>
+                <div class="ui fluid vertical menu">
+                    <a href="#" target="_blank" class="item">
+                         <span>
+                             <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
+                             <div class="ui teal basic small label m-margin-left">10月01</div>
+                         </span>
+                        <div class="ui orange basic  label">原创</div>
+                    </a>
+                    <a href="#" target="_blank" class="item">
+                         <span>
+                             <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
+                             <div class="ui teal basic small label m-margin-left">10月01</div>
+                         </span>
+                        <div class="ui orange basic  label">原创</div>
+                    </a>
+                    <a href="#" target="_blank" class="item">
+                         <span>
+                             <i class=" teal tiny circle icon "></i>关于如何学习JavaEE
+                             <div class="ui teal basic small label m-margin-left">10月01</div>
+                         </span>
+                        <div class="ui orange basic  label">原创</div>
+                    </a>
+                </div>
+                <!--*/-->
+            </th:block>
         </div>
     </div>
     <br>

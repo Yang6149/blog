@@ -23,4 +23,8 @@ public interface BlogService {
     List<Blog> listBlog();
 
     int count();
+
+    List<Blog> recommentBlog();
+
+    List<Blog> newBlog(int num);
 }

@@ -8,14 +8,11 @@ import com.yang.blog.vo.BlogQuery;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Conditional;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class IndexController {
@@ -32,11 +29,7 @@ public class IndexController {
         model.addAttribute("page",blogService.listBlog(pageable,new BlogQuery()));
         model.addAttribute("tags",tagService.listTag());
         model.addAttribute("types",typeService.listType());
-        //int a=9/0;
-//        String blog=null;
-//        if(blog==null){
-//            throw new NotFoundException("blog not found");
-//        }
+        model.addAttribute("recommendBlogs",blogService.recommentBlog());
         System.out.println("print-----------");
         return "index";
     }
@@ -51,5 +44,10 @@ public class IndexController {
         }
         model.addAttribute("blog",b);
         return "blog";
+    }
+    @GetMapping("/footer/newblog")
+    public String newblogs(Model model){
+        model.addAttribute("newblogs",blogService.newBlog(3));
+        return "_fragments :: newblogList";
     }
 }

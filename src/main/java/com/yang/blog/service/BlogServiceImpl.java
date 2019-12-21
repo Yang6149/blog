@@ -8,7 +8,9 @@ import com.yang.blog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
@@ -16,9 +18,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-import javax.xml.crypto.Data;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
@@ -46,6 +46,7 @@ public class BlogServiceImpl implements BlogService{
                 if(blog.isRecommend()){
                     predicates.add(criteriaBuilder.equal(root.<Boolean>get("recommend"),blog.isRecommend()));
                 }
+
                 criteriaQuery.where(predicates.toArray(new Predicate[predicates.size()]));
                 return null;
             }
@@ -100,6 +101,25 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public int count() {
         return (int) repository.count();
+    }
+
+    @Override
+    public List<Blog> recommentBlog() {
+
+        return repository.findAll(new Specification<Blog>() {
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                List<Predicate> predicates = new ArrayList<>();
+                predicates.add(criteriaBuilder.equal(root.<Boolean>get("recommend"),true));
+                criteriaQuery.where(predicates.toArray(new Predicate[predicates.size()]));
+                return null;
+            }
+        });
+    }
+
+    @Override
+    public List<Blog> newBlog(int num) {
+        return repository.findTop(num);
     }
 
 
