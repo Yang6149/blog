@@ -5849,3 +5849,35 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2019-12-21 23:32:03.343  INFO 10292 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
 2019-12-21 23:32:03.415  INFO 10292 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfter
 2019-12-21 23:32:03.416  INFO 10292 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2019-12-21 23:37:13.581  INFO 3740 --- [restartedMain] com.yang.blog.BlogApplication            : Starting BlogApplication on DESKTOP-IHFCB9J with PID 3740 (C:\Users\hasaki\IdeaProjects\blog\target\classes started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2019-12-21 23:37:13.590 DEBUG 3740 --- [restartedMain] com.yang.blog.BlogApplication            : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-21 23:37:13.591  INFO 3740 --- [restartedMain] com.yang.blog.BlogApplication            : The following profiles are active: dev
+2019-12-21 23:37:13.707  INFO 3740 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\hasaki\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-12-21 23:37:13.708  INFO 3740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-21 23:37:13.708  INFO 3740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-21 23:37:15.039  INFO 3740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-21 23:37:15.168  INFO 3740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116ms. Found 5 JPA repository interfaces.
+2019-12-21 23:37:15.565  INFO 3740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-21 23:37:16.151  INFO 3740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-21 23:37:16.165  INFO 3740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-21 23:37:16.166  INFO 3740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-21 23:37:16.174  INFO 3740 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2019-12-21 23:37:16.174  INFO 3740 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-21 23:37:16.175  INFO 3740 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-21 23:37:16.197  INFO 3740 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2019-12-21 23:37:16.326  INFO 3740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-21 23:37:16.326  INFO 3740 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2617 ms
+2019-12-21 23:37:16.661  INFO 3740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-21 23:37:16.762  INFO 3740 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-21 23:37:16.945  INFO 3740 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-21 23:37:17.073  INFO 3740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-21 23:37:17.237  INFO 3740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-21 23:37:17.254  INFO 3740 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2019-12-21 23:37:18.248  INFO 3740 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-21 23:37:18.255  INFO 3740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-21 23:37:18.354  INFO 3740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-21 23:37:19.180  WARN 3740 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-21 23:37:19.443  INFO 3740 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-21 23:37:19.551  INFO 3740 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-21 23:37:20.028  INFO 3740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-21 23:37:20.031  INFO 3740 --- [restartedMain] com.yang.blog.BlogApplication            : Started BlogApplication in 7.67 seconds (JVM running for 9.968)
