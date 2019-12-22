@@ -1,14 +1,12 @@
 spring:
-  thymeleaf:
-    mode: HTML
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
-    data-username: root
-    data-password: 1234
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&useLegacyDatetimeCode=false&serverTimezone=UTC
+    password: 1234
+    username: root
   jpa:
     hibernate:
-      ddl-auto: none #update会根据类中的结构修改数据库中表的结构
+      ddl-auto: update #update会根据类中的结构修改数据库中表的结构
     show-sql: true #在控制台输出sql语句
 logging:
   level:
@@ -17,4 +15,4 @@ logging:
   file:
     name: log/blog-pro.log
 server:
-  port: 8081
+  port: 8080
