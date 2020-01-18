@@ -36,7 +36,8 @@ public class IndexController {
 
     @GetMapping("/blog/{id}")
     public String blog(@PathVariable Long id, Model model){
-        Blog b=blogService.getBlog(id);
+        Blog b=blogService.getAndConvert(id);
+        //Blog b=blogService.getBlog(id);
         b.setViews(b.getViews());
         logger.info(b.toString());
         if(b.getComments()!=null){

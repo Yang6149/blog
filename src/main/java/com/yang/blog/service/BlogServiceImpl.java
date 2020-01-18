@@ -3,8 +3,10 @@ package com.yang.blog.service;
 import com.yang.blog.dao.BlogRepository;
 import com.yang.blog.po.Blog;
 import com.yang.blog.po.Type;
+import com.yang.blog.util.Markdown2Html;
 import com.yang.blog.util.MyBeanUtils;
 import com.yang.blog.vo.BlogQuery;
+import com.yang.blog.web.NotFoundException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -29,6 +31,19 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public Blog getBlog(Long id) {
         return repository.getOne(id);
+    }
+
+    @Override
+    public Blog getAndConvert(Long id) {
+        Blog blog = repository.getOne(id);
+        if(blog == null){
+            throw new NotFoundException("该博客不存在");
+        }
+        String content = blog.getContent();
+
+        blog.setContent(Markdown2Html.markdownToHtmlExtensions(content));
+
+        return blog;
     }
 
     @Override
