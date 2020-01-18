@@ -34,9 +34,9 @@ public class Comment {
                 ", content='" + content + '\'' +
                 ", avatar='" + avatar + '\'' +
                 ", createTime=" + createTime +
-                ", blog=" + blog +
-                ", replyComments=" + replyComments +
-                ", parentComment=" + parentComment +
+                //", blog=" + blog +
+                //", replyComments=" + replyComments +
+                //", parentComment=" + parentComment +
                 '}';
     }
 

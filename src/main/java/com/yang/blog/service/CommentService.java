@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface CommentService {
 
-
+    public List<Comment> ListCommentByBlogId(Long blogId);
     Comment save(Comment comment);
 }

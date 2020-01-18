@@ -550,7 +550,7 @@
 
         /*二维码生成*/
 
-        var serurl = /*[[#blog.serurl]]*/"http://172.20.10.6:8080";
+        var serurl = /*[[#{blog.serurl}]]*/"http://172.20.10.6:8080";
         var url = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
         var qrcode = new QRCode("qrcode", {
             text: serurl+url,
