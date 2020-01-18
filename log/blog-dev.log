@@ -4165,3 +4165,1205 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2020-01-18 21:05:03.182  INFO 12296 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
 2020-01-18 21:05:03.190  INFO 12296 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : -------------doAfter
 2020-01-18 21:05:03.191  INFO 12296 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:24:14.847  INFO 12636 --- [restartedMain] com.yang.blog.BlogApplication            : Starting BlogApplication on DESKTOP-IHFCB9J with PID 12636 (C:\Users\hasaki\IdeaProjects\blog\target\classes started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2020-01-18 21:24:14.851 DEBUG 12636 --- [restartedMain] com.yang.blog.BlogApplication            : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-01-18 21:24:14.851  INFO 12636 --- [restartedMain] com.yang.blog.BlogApplication            : The following profiles are active: dev
+2020-01-18 21:24:14.965  INFO 12636 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\hasaki\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-01-18 21:24:14.966  INFO 12636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-18 21:24:14.966  INFO 12636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-18 21:24:15.904  INFO 12636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-18 21:24:16.018  INFO 12636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102ms. Found 5 JPA repository interfaces.
+2020-01-18 21:24:16.378  INFO 12636 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-18 21:24:17.084  INFO 12636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-18 21:24:17.095  INFO 12636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-18 21:24:17.095  INFO 12636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-18 21:24:17.098  INFO 12636 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-01-18 21:24:17.099  INFO 12636 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-01-18 21:24:17.099  INFO 12636 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-01-18 21:24:17.156  INFO 12636 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-01-18 21:24:17.287  INFO 12636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-18 21:24:17.288  INFO 12636 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2321 ms
+2020-01-18 21:24:17.544  INFO 12636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-18 21:24:17.701  INFO 12636 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-18 21:24:17.932  INFO 12636 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-18 21:24:18.100  INFO 12636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-18 21:24:18.262  INFO 12636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-18 21:24:18.283  INFO 12636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-01-18 21:24:19.295  INFO 12636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-18 21:24:19.302  INFO 12636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-18 21:24:19.372  INFO 12636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-18 21:24:20.269  WARN 12636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-18 21:24:20.517  INFO 12636 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-18 21:24:20.630  INFO 12636 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-18 21:24:21.222  INFO 12636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-18 21:24:21.225  INFO 12636 --- [restartedMain] com.yang.blog.BlogApplication            : Started BlogApplication in 7.45 seconds (JVM running for 8.898)
+2020-01-18 21:24:23.873  INFO 12636 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-18 21:24:23.874  INFO 12636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-18 21:24:23.891  INFO 12636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-01-18 21:24:23.931  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.index', args=[{}, Page request [number: 0, size 20, sort: UNSORTED]]}
+2020-01-18 21:24:24.197  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:24:24.198  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn index
+2020-01-18 21:24:25.900  INFO 12636 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:24:25.972  INFO 12636 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:24:25.973  INFO 12636 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:24:31.380  INFO 12636 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/blog/40', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.blog', args=[40, {}]}
+2020-01-18 21:24:31.441  INFO 12636 --- [http-nio-8080-exec-2] com.yang.blog.web.IndexController        : Blog{userUser{id=1, nickname='yangshen', username='yangshen', password='81dc9bdb52d04dc20036dbd8313ed055', email='614989768@qq.com', avatar='https://picsum.photos/id/1011/800/400', type=1, createTime=null, updateTime=null}id=40, title='tag', content='<h1 id="class类的三种实例化模式">Class类的三种实例化模式</h1>
+<h3 id="类的定义">类的定义</h3>
+<p><code>public final class Class&lt;T&gt;extends Object implements Serializable,GenericDeclaration,Type,AnnotatedElement</code></p>
+<h3 id="第一种-object类支持public-final-class-getclass">第一种 Object类支持：public final Class&lt;?&gt; getClass()</h3>
+<pre><code class="language-java">Person per = new Person();
+Class&lt;? extends Person &gt; cls = per.getClass();
+System.out.println(cls);# class 包.类
+System.out.println(cls).getName();# 包.类
+</code></pre>
+<p>如果只是想获得Class类对象必须得先获得指定类的对象</p>
+<h3 id="jvm支持">JVM支持</h3>
+<pre><code class="language-java">Class&lt;? extends Person &gt; cls = Person.Class;
+System.out.println(cls);# class 包.类
+System.out.println(cls).getName();# 包.类
+</code></pre>
+<h3 id="class类支持">Class类支持</h3>
+<pre><code class="language-java">#Person包没有导入
+Class&lt;? &gt; cls = Class.forName(&quot;包.类&quot;);
+System.out.println(cls);# class 包.类
+System.out.println(cls).getName();# 包.类
+</code></pre>
+<h3 id="工厂设计模式升级">工厂设计模式升级</h3>
+<pre><code class="language-java">package com.Runtim;
+
+import java.lang.reflect.InvocationTargetException;
+
+public class TestRun {
+    public static void main(String[] args) {
+        Houseservice h= new Houseservice();
+        Class&lt;? extends Houseservice&gt; cls= h.getClass();
+        System.out.println(cls);
+        System.out.println(&quot;******************&quot;);
+        try {
+            Cloudservice c =Factory.get(&quot;com.Runtim.Cloudservice&quot;,Cloudservice.class);
+            c.send();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        }
+    }
+
+}
+interface service{
+    public void send();
+}
+class Houseservice implements service{
+    public Houseservice(){
+        System.out.println(this+&quot;构造方法&quot;);
+    }
+    @Override
+    public void send() {
+        System.out.println(&quot;House send&quot;);
+    }
+}
+class Cloudservice implements service{
+    public Cloudservice(){
+        System.out.println(this+&quot;构造方法&quot;);
+    }
+    @Override
+    public void send() {
+        System.out.println(&quot;Cloud send&quot;);
+    }
+}
+class Factory{
+    public static &lt;T&gt; T get(String stringname,Class&lt;T&gt; clazz) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        T instance=null;
+        instance =(T)Class.forName(stringname).getDeclaredConstructor().newInstance();
+        return instance;
+    }
+}
+</code></pre>
+<p>可以指定任意类进行返回实例，而不修改工厂类</p>
+', firstPicture='https://picsum.photos/id/1011/800/400', flag='', views=0, appreciation=false, shareStatement=false, commentabled=true, published=true, recommend=true, createTime=2019-12-22 23:41:24.0, updateTime=2019-12-22 23:41:24.0}
+2020-01-18 21:24:31.442  INFO 12636 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:24:31.442  INFO 12636 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn blog
+2020-01-18 21:24:31.509 ERROR 12636 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: org.attoparser.ParseException: An error happened during template rendering
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateOutputException: An error happened during template rendering
+	at org.thymeleaf.engine.OutputTemplateHandler.handleText(OutputTemplateHandler.java:75)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleText(ProcessorTemplateHandler.java:587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleText(TemplateHandlerAdapterMarkupHandler.java:218)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleText(InlinedOutputExpressionMarkupHandler.java:232)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:136)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:557)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "#blog.serurl" (template: "blog" - line 484, col 26)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.process(TemplateManager.java:519)
+	at org.thymeleaf.util.LazyProcessingCharSequence.writeUnresolved(LazyProcessingCharSequence.java:85)
+	at org.thymeleaf.util.AbstractLazyCharSequence.write(AbstractLazyCharSequence.java:103)
+	at org.thymeleaf.engine.AbstractTextualTemplateEvent.writeContent(AbstractTextualTemplateEvent.java:224)
+	at org.thymeleaf.engine.Text.write(Text.java:78)
+	at org.thymeleaf.engine.OutputTemplateHandler.handleText(OutputTemplateHandler.java:71)
+	... 59 common frames omitted
+
+2020-01-18 21:24:31.518 ERROR 12636 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "#blog.serurl" (template: "blog" - line 484, col 26)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.process(TemplateManager.java:519)
+	at org.thymeleaf.util.LazyProcessingCharSequence.writeUnresolved(LazyProcessingCharSequence.java:85)
+	at org.thymeleaf.util.AbstractLazyCharSequence.write(AbstractLazyCharSequence.java:103)
+	at org.thymeleaf.engine.AbstractTextualTemplateEvent.writeContent(AbstractTextualTemplateEvent.java:224)
+	at org.thymeleaf.engine.Text.write(Text.java:78)
+	at org.thymeleaf.engine.OutputTemplateHandler.handleText(OutputTemplateHandler.java:71)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleText(ProcessorTemplateHandler.java:587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleText(TemplateHandlerAdapterMarkupHandler.java:218)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleText(InlinedOutputExpressionMarkupHandler.java:232)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:136)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:557)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2020-01-18 21:24:31.536 ERROR 12636 --- [http-nio-8080-exec-2] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/blog/40] and exception [An error happened during template parsing (template: "class path resource [templates/blog.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+2020-01-18 21:24:32.143  INFO 12636 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:24:32.152  INFO 12636 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:24:32.153  INFO 12636 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:24:52.456  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/blog/41', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.blog', args=[41, {}]}
+2020-01-18 21:24:52.478  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.web.IndexController        : Blog{userUser{id=1, nickname='yangshen', username='yangshen', password='81dc9bdb52d04dc20036dbd8313ed055', email='614989768@qq.com', avatar='https://picsum.photos/id/1011/800/400', type=1, createTime=null, updateTime=null}id=41, title='mysql', content='<h1 id="sql语句">sql语句</h1>
+<h2 id="ddl">DDL</h2>
+<p>用来定义数据库对象：库、表、列<br />
+创建、删除、修改 结构</p>
+<ul>
+<li>
+<p>数据库</p>
+<ol>
+<li>查看所有数据库：<code>SHOW DATABASES</code></li>
+<li>切换（要操作的）数据库：<code>USE 数据库名</code></li>
+<li>创建数据库:<code>CREATE DATABASES [IF NOT EXISTS] mydb [CHARSET=utf8]</code></li>
+<li>删除数据库：<code>DROP DATABASES [IF EXISTS] mydb</code></li>
+<li>修改数据库编码:<code>ALTER DATABASES mydb CHARACTER SET utf8</code></li>
+</ol>
+</li>
+<li>
+<p>数据类型</p>
+<ul>
+<li>文本类
+<ol>
+<li>CHAR(size)</li>
+<li>VARCHAR(size)  大于size255转化为TEXT</li>
+<li>TINYTEXT</li>
+<li>TEXT 65535个字符</li>
+<li>BLOB 65535个字节</li>
+<li>MEDIUMTEXT 16 777 215个字符</li>
+<li>LONGTEXT 4 294 967 295个字符</li>
+<li>ENUM(x,y,z) 只能输入预定好的值65535</li>
+<li>SET 与MEUM类似，最多包含64个列表项，可存储一个以上的值</li>
+</ol>
+</li>
+<li>数据类
+<ol>
+<li>TINYINT(size) -128 to 127      ro 0 to 255</li>
+<li>SMALLINT(size) -32768 to 32767</li>
+<li>MEDIUMINT(size) -8388608 to 8388607</li>
+<li>INT(size)    -2147483648 to 2147483647</li>
+<li>BIGINT(size)  -9223372036854775808 to 9223372036854775807</li>
+<li>FLOAT(size,d) d规定小数点右侧的最大位数</li>
+<li>DOUBLE(size,d)</li>
+<li>DECIMAL  字符串存储的DOUBLE类型，允许固定的小数点</li>
+</ol>
+</li>
+<li>时间类
+<ol>
+<li>DATE()  YYYY-MM-DD</li>
+<li>DATETIME()  YYYY-MM-DD HH:MM:SS</li>
+<li>TIMESTAMP() YYYY-MM-DD HH:MM:SS使用Unix纪元‘1970-01-01 00:00:00’至今的描述存储</li>
+<li>TIME()  HH:MM:SS</li>
+<li>YEAR()   1901-2155   70-69</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>表</p>
+<ol>
+<li>
+<p>创建表：</p>
+<pre><code>CREATE TABLE [IF NOT EXISTS] 表名(
+    列名 列类型,
+    列名 列类型, 
+    列名 列类型,
+    列名 列类型
+)[ charset = utf8];
+</code></pre>
+</li>
+<li>
+<p>查看当前数据库中所有表名称：SHOW TABLES;</p>
+</li>
+<li>
+<p>查看表结构： DESC 表名;</p>
+</li>
+<li>
+<p>删除表 DROP TABLE 表名;</p>
+</li>
+<li>
+<p>修改表 前缀：ALTER TABLE 表名</p>
+<ul>
+<li>添加：</li>
+</ul>
+<pre><code>ALTER TABLE 表名 ADD(
+    列名 列类型,
+...
+)
+</code></pre>
+<ul>
+<li>修改列类型</li>
+</ul>
+<pre><code class="language-sql">ALTER TABLE 表名 MODIFY 列名 列类型
+</code></pre>
+<ul>
+<li>修改列名称</li>
+</ul>
+<pre><code class="language-sql">ALTER TABLE 表名 CHANGE 原列名 新列名 列类型;
+</code></pre>
+<ul>
+<li>删除列</li>
+</ul>
+<pre><code class="language-sql">ALTER TABLE 表名 DROP 列名;
+</code></pre>
+<ul>
+<li>修改表名</li>
+</ul>
+<pre><code class="language-sql">ALTER TABLE 表名 RENAME 新表名
+</code></pre>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="dml">DML</h2>
+<p>数据操作语言<br />
+对表的记录进行更新（增删改）</p>
+<ul>
+<li>
+<p>插入数据<br />
+<code>INSERT INTO 表名(列名，列名..)VALUES('','',..);</code></p>
+</li>
+<li>
+<p>修改数据
+<code>UPDATE 表名 SET 列名=值1，列名=值2，...[WHERE 条件]；</code>不加 where 该列全部修改</p>
+</li>
+<li>
+<p>删除数据
+<code>DELETE FROM 表名 [WHERE 条件];</code></p>
+</li>
+</ul>
+<h2 id="dcl">DCL</h2>
+<p>对用户的创建，授权</p>
+<ul>
+<li>创建用户
+<code>CREATE USER 用户名@ip地址('%') IDENTIFIED BY '密码';</code></li>
+<li>给用户授权
+<code>GRANT 权限1，权限n ON 数据库.* TO 用户名@ip地址</code></li>
+<li>撤销授权
+<code>REVOKE 权限1，权限n ON 数据库.* TO 用户名@ip地址</code></li>
+<li>查看权限
+<code>SHOW GRANTS FOR 用户名@ip地址</code></li>
+<li>删除用户
+<code>DROP USER 用户名@ip地址</code></li>
+</ul>
+<h2 id="dql">DQL</h2>
+<ul>
+<li>
+<p>distinct  去重</p>
+<p><code>select distinct col_name from table_name</code></p>
+</li>
+<li>
+<p>order by   默认为asc</p>
+<p><code>select * from table_name [where] order by col_name [asc/desc][,col_name [asc/desc]...]</code></p>
+</li>
+<li>
+<p>limit(dialect)</p>
+<p><code>select * from table_name [where] [order by col_name] limit[offset,]rowCount</code></p>
+</li>
+<li>
+<p>insert into and select</p>
+<p><code>insert into table1 [(col1,col2)]select col3,col4 from table2</code></p>
+</li>
+<li>
+<p>in 语法</p>
+<p><code>select * from table_name col_name in (value1,value2)</code>value 可用select col_name获得</p>
+</li>
+<li>
+<p>between      （a&lt;=b&lt;=c）  not between</p>
+</li>
+<li>
+<p>like</p>
+<p><code>select * from table_name where col_name [not] like pattern</code></p>
+<p>&quot;%&quot;可以匹配任何字符串</p>
+</li>
+<li>
+<p>count</p>
+<p><code>select count(*) 自定义列名 from table_name</code> 用于查询该列有多少条值，为Null不计</p>
+</li>
+<li>
+<p>sum</p>
+<p><code>select sum(slary) from table_name</code>  例 计算工资（该列值）总和  null为0</p>
+</li>
+<li>
+<p>max、min、avg</p>
+</li>
+<li>
+<p><strong>group by</strong></p>
+<p><code>select job,count(*) from emp [where] group by job</code>与之前的聚合函数配合使用，每一份组的聚合值</p>
+</li>
+<li>
+<p><strong>having</strong></p>
+<p><code>select job,count(*) from emp [where] group by job having count(*)&gt;=2</code></p>
+</li>
+</ul>
+<h3 id="连接查询">连接查询</h3>
+<ul>
+<li>
+<p>内连接</p>
+<p><code>select * from table_1,table_2</code> 笛卡尔积</p>
+<p><code>inner join</code> 加条件   <code>nature join</code>自动寻找条件</p>
+</li>
+<li>
+<p>外连接</p>
+<p>左外连接  有一主一次，当不满足条件时，左表完全显示，不满足内容为NULL</p>
+<pre><code class="language-sql">SELECT e.ename , d.dname
+FROM emp e LEFT OUT JOIN dept d
+ON e.deptid=d.deptid
+</code></pre>
+</li>
+<li>
+<p>右外连接同理左外连接，右表为主</p>
+</li>
+<li>
+<p>全外为full outer join（mysql不支持）可以通过左外加右外加union关键字实现</p>
+</li>
+</ul>
+<h3 id="子查询">子查询</h3>
+<p>子查询可以在 <strong>from</strong> 后，也可以在 <strong>where</strong> 后</p>
+<ul>
+<li>多行单列<code>sal &gt; ALL(查找语句)</code> or<code>sal &gt; ANY (查找语句)</code>  <code>IN</code></li>
+<li>单行多列<code>select * from table_1 where (col_1,col_20) IN (select col_1,col_2 from table_2 where 条件)</code></li>
+<li>多行多列<code>select * from table_1 别名1,(select ...)别名2 where 条件</code></li>
+</ul>
+<p>关键字执行顺序（<strong>select、from、where、group by、having、order by</strong>）</p>
+<h2 id="数据的备份与恢复">数据的备份与恢复</h2>
+<ul>
+<li><code>mysqldump -p用户名 -u密码 数据库名&gt;路径</code></li>
+<li><code>mysqldump -p用户名 -u密码 数据库名&lt;路径</code></li>
+<li><code>在客户端里面 source 路径名</code></li>
+</ul>
+<h2 id="约束">约束</h2>
+<ul>
+<li>PRIMARY KEY</li>
+<li>NOT NULL</li>
+<li>UNIQUE</li>
+<li>AUTO_INCREMENT</li>
+<li><code>CONSTRAINT 约束名fk_从表_主表 FOREIGN KEY(本表被约束属性) CONFERENCES 主表(主表的主键)</code></li>
+</ul>
+<h4 id="合并结果集">合并结果集</h4>
+<pre><code class="language-sql">select a , b from table_1
+union all
+select c , d from table_2
+on 条件
+</code></pre>
+<p>加上<code>all</code>全部显示，不加的话完全相同的行会消除</p>
+', firstPicture='https://picsum.photos/id/1011/800/400', flag='ss', views=0, appreciation=false, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=2020-01-18 16:34:11.0, updateTime=2020-01-18 16:34:11.0}
+2020-01-18 21:24:52.479  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:24:52.480  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn blog
+2020-01-18 21:24:52.529 ERROR 12636 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: org.attoparser.ParseException: An error happened during template rendering
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateOutputException: An error happened during template rendering
+	at org.thymeleaf.engine.OutputTemplateHandler.handleText(OutputTemplateHandler.java:75)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleText(ProcessorTemplateHandler.java:587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleText(TemplateHandlerAdapterMarkupHandler.java:218)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleText(InlinedOutputExpressionMarkupHandler.java:232)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:136)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:557)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "#blog.serurl" (template: "blog" - line 484, col 26)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.process(TemplateManager.java:519)
+	at org.thymeleaf.util.LazyProcessingCharSequence.writeUnresolved(LazyProcessingCharSequence.java:85)
+	at org.thymeleaf.util.AbstractLazyCharSequence.write(AbstractLazyCharSequence.java:103)
+	at org.thymeleaf.engine.AbstractTextualTemplateEvent.writeContent(AbstractTextualTemplateEvent.java:224)
+	at org.thymeleaf.engine.Text.write(Text.java:78)
+	at org.thymeleaf.engine.OutputTemplateHandler.handleText(OutputTemplateHandler.java:71)
+	... 59 common frames omitted
+
+2020-01-18 21:24:52.534 ERROR 12636 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "#blog.serurl" (template: "blog" - line 484, col 26)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.process(TemplateManager.java:519)
+	at org.thymeleaf.util.LazyProcessingCharSequence.writeUnresolved(LazyProcessingCharSequence.java:85)
+	at org.thymeleaf.util.AbstractLazyCharSequence.write(AbstractLazyCharSequence.java:103)
+	at org.thymeleaf.engine.AbstractTextualTemplateEvent.writeContent(AbstractTextualTemplateEvent.java:224)
+	at org.thymeleaf.engine.Text.write(Text.java:78)
+	at org.thymeleaf.engine.OutputTemplateHandler.handleText(OutputTemplateHandler.java:71)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleText(ProcessorTemplateHandler.java:587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleText(TemplateHandlerAdapterMarkupHandler.java:218)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleText(InlinedOutputExpressionMarkupHandler.java:232)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:136)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:557)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2020-01-18 21:24:52.564 ERROR 12636 --- [http-nio-8080-exec-6] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/blog/41] and exception [An error happened during template parsing (template: "class path resource [templates/blog.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+2020-01-18 21:24:53.194  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:24:53.205  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:24:53.205  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:25:19.356  WARN 12636 --- [http-nio-8080-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [241] milliseconds.
+2020-01-18 21:25:19.586  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:25:19.597  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:25:19.598  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:25:26.058  INFO 12636 --- [http-nio-8080-exec-4] com.yang.blog.web.admin.BlogController   : 访问list
+2020-01-18 21:25:26.200  INFO 12636 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:25:26.207  INFO 12636 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:25:26.208  INFO 12636 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:25:34.557  INFO 12636 --- [http-nio-8080-exec-9] com.yang.blog.web.admin.BlogController   : 修改blog
+2020-01-18 21:25:34.706  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:25:34.712  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:25:34.712  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:36:27.702  INFO 12636 --- [http-nio-8080-exec-5] com.yang.blog.web.admin.BlogController   : 修改blog
+2020-01-18 21:36:27.966  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:36:27.974  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:36:27.974  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:37:20.772  INFO 12636 --- [http-nio-8080-exec-10] com.yang.blog.web.admin.BlogController   : 提交增加blog
+2020-01-18 21:37:20.824  INFO 12636 --- [http-nio-8080-exec-3] com.yang.blog.web.admin.BlogController   : 访问list
+2020-01-18 21:37:21.085  INFO 12636 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:37:21.093  INFO 12636 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:37:21.094  INFO 12636 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:37:30.809  INFO 12636 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.index', args=[{}, Page request [number: 0, size 20, sort: UNSORTED]]}
+2020-01-18 21:37:30.838  INFO 12636 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:37:30.838  INFO 12636 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn index
+2020-01-18 21:37:31.313  INFO 12636 --- [http-nio-8080-exec-3] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:37:31.320  INFO 12636 --- [http-nio-8080-exec-3] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:37:31.321  INFO 12636 --- [http-nio-8080-exec-3] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:37:37.506  INFO 12636 --- [http-nio-8080-exec-7] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/blog/41', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.blog', args=[41, {}]}
+2020-01-18 21:37:37.522  INFO 12636 --- [http-nio-8080-exec-7] com.yang.blog.web.IndexController        : Blog{userUser{id=1, nickname='yangshen', username='yangshen', password='81dc9bdb52d04dc20036dbd8313ed055', email='614989768@qq.com', avatar='https://picsum.photos/id/1011/800/400', type=1, createTime=null, updateTime=null}id=41, title='mysql', content='<h1 id="sql语句">sql语句</h1>
+<h2 id="ddl">DDL</h2>
+<p>用来定义数据库对象：库、表、列<br />
+创建、删除、修改 结构</p>
+<ul>
+<li>
+<p>数据库</p>
+<ol>
+<li>查看所有数据库：<code>SHOW DATABASES</code></li>
+<li>切换（要操作的）数据库：<code>USE 数据库名</code></li>
+<li>创建数据库:<code>CREATE DATABASES [IF NOT EXISTS] mydb [CHARSET=utf8]</code></li>
+<li>删除数据库：<code>DROP DATABASES [IF EXISTS] mydb</code></li>
+<li>修改数据库编码:<code>ALTER DATABASES mydb CHARACTER SET utf8</code></li>
+</ol>
+</li>
+<li>
+<p>数据类型</p>
+<ul>
+<li>文本类
+<ol>
+<li>CHAR(size)</li>
+<li>VARCHAR(size)  大于size255转化为TEXT</li>
+<li>TINYTEXT</li>
+<li>TEXT 65535个字符</li>
+<li>BLOB 65535个字节</li>
+<li>MEDIUMTEXT 16 777 215个字符</li>
+<li>LONGTEXT 4 294 967 295个字符</li>
+<li>ENUM(x,y,z) 只能输入预定好的值65535</li>
+<li>SET 与MEUM类似，最多包含64个列表项，可存储一个以上的值</li>
+</ol>
+</li>
+<li>数据类
+<ol>
+<li>TINYINT(size) -128 to 127      ro 0 to 255</li>
+<li>SMALLINT(size) -32768 to 32767</li>
+<li>MEDIUMINT(size) -8388608 to 8388607</li>
+<li>INT(size)    -2147483648 to 2147483647</li>
+<li>BIGINT(size)  -9223372036854775808 to 9223372036854775807</li>
+<li>FLOAT(size,d) d规定小数点右侧的最大位数</li>
+<li>DOUBLE(size,d)</li>
+<li>DECIMAL  字符串存储的DOUBLE类型，允许固定的小数点</li>
+</ol>
+</li>
+<li>时间类
+<ol>
+<li>DATE()  YYYY-MM-DD</li>
+<li>DATETIME()  YYYY-MM-DD HH:MM:SS</li>
+<li>TIMESTAMP() YYYY-MM-DD HH:MM:SS使用Unix纪元‘1970-01-01 00:00:00’至今的描述存储</li>
+<li>TIME()  HH:MM:SS</li>
+<li>YEAR()   1901-2155   70-69</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>表</p>
+<ol>
+<li>
+<p>创建表：</p>
+<pre><code>CREATE TABLE [IF NOT EXISTS] 表名(
+    列名 列类型,
+    列名 列类型, 
+    列名 列类型,
+    列名 列类型
+)[ charset = utf8];
+</code></pre>
+</li>
+<li>
+<p>查看当前数据库中所有表名称：SHOW TABLES;</p>
+</li>
+<li>
+<p>查看表结构： DESC 表名;</p>
+</li>
+<li>
+<p>删除表 DROP TABLE 表名;</p>
+</li>
+<li>
+<p>修改表 前缀：ALTER TABLE 表名</p>
+<ul>
+<li>添加：</li>
+</ul>
+<pre><code>ALTER TABLE 表名 ADD(
+    列名 列类型,
+...
+)
+</code></pre>
+<ul>
+<li>修改列类型</li>
+</ul>
+<pre><code class="language-sql">ALTER TABLE 表名 MODIFY 列名 列类型
+</code></pre>
+<ul>
+<li>修改列名称</li>
+</ul>
+<pre><code class="language-sql">ALTER TABLE 表名 CHANGE 原列名 新列名 列类型;
+</code></pre>
+<ul>
+<li>删除列</li>
+</ul>
+<pre><code class="language-sql">ALTER TABLE 表名 DROP 列名;
+</code></pre>
+<ul>
+<li>修改表名</li>
+</ul>
+<pre><code class="language-sql">ALTER TABLE 表名 RENAME 新表名
+</code></pre>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="dml">DML</h2>
+<p>数据操作语言<br />
+对表的记录进行更新（增删改）</p>
+<ul>
+<li>
+<p>插入数据<br />
+<code>INSERT INTO 表名(列名，列名..)VALUES('','',..);</code></p>
+</li>
+<li>
+<p>修改数据
+<code>UPDATE 表名 SET 列名=值1，列名=值2，...[WHERE 条件]；</code>不加 where 该列全部修改</p>
+</li>
+<li>
+<p>删除数据
+<code>DELETE FROM 表名 [WHERE 条件];</code></p>
+</li>
+</ul>
+<h2 id="dcl">DCL</h2>
+<p>对用户的创建，授权</p>
+<ul>
+<li>创建用户
+<code>CREATE USER 用户名@ip地址('%') IDENTIFIED BY '密码';</code></li>
+<li>给用户授权
+<code>GRANT 权限1，权限n ON 数据库.* TO 用户名@ip地址</code></li>
+<li>撤销授权
+<code>REVOKE 权限1，权限n ON 数据库.* TO 用户名@ip地址</code></li>
+<li>查看权限
+<code>SHOW GRANTS FOR 用户名@ip地址</code></li>
+<li>删除用户
+<code>DROP USER 用户名@ip地址</code></li>
+</ul>
+<h2 id="dql">DQL</h2>
+<ul>
+<li>
+<p>distinct  去重</p>
+<p><code>select distinct col_name from table_name</code></p>
+</li>
+<li>
+<p>order by   默认为asc</p>
+<p><code>select * from table_name [where] order by col_name [asc/desc][,col_name [asc/desc]...]</code></p>
+</li>
+<li>
+<p>limit(dialect)</p>
+<p><code>select * from table_name [where] [order by col_name] limit[offset,]rowCount</code></p>
+</li>
+<li>
+<p>insert into and select</p>
+<p><code>insert into table1 [(col1,col2)]select col3,col4 from table2</code></p>
+</li>
+<li>
+<p>in 语法</p>
+<p><code>select * from table_name col_name in (value1,value2)</code>value 可用select col_name获得</p>
+</li>
+<li>
+<p>between      （a&lt;=b&lt;=c）  not between</p>
+</li>
+<li>
+<p>like</p>
+<p><code>select * from table_name where col_name [not] like pattern</code></p>
+<p>&quot;%&quot;可以匹配任何字符串</p>
+</li>
+<li>
+<p>count</p>
+<p><code>select count(*) 自定义列名 from table_name</code> 用于查询该列有多少条值，为Null不计</p>
+</li>
+<li>
+<p>sum</p>
+<p><code>select sum(slary) from table_name</code>  例 计算工资（该列值）总和  null为0</p>
+</li>
+<li>
+<p>max、min、avg</p>
+</li>
+<li>
+<p><strong>group by</strong></p>
+<p><code>select job,count(*) from emp [where] group by job</code>与之前的聚合函数配合使用，每一份组的聚合值</p>
+</li>
+<li>
+<p><strong>having</strong></p>
+<p><code>select job,count(*) from emp [where] group by job having count(*)&gt;=2</code></p>
+</li>
+</ul>
+<h3 id="连接查询">连接查询</h3>
+<ul>
+<li>
+<p>内连接</p>
+<p><code>select * from table_1,table_2</code> 笛卡尔积</p>
+<p><code>inner join</code> 加条件   <code>nature join</code>自动寻找条件</p>
+</li>
+<li>
+<p>外连接</p>
+<p>左外连接  有一主一次，当不满足条件时，左表完全显示，不满足内容为NULL</p>
+<pre><code class="language-sql">SELECT e.ename , d.dname
+FROM emp e LEFT OUT JOIN dept d
+ON e.deptid=d.deptid
+</code></pre>
+</li>
+<li>
+<p>右外连接同理左外连接，右表为主</p>
+</li>
+<li>
+<p>全外为full outer join（mysql不支持）可以通过左外加右外加union关键字实现</p>
+</li>
+</ul>
+<h3 id="子查询">子查询</h3>
+<p>子查询可以在 <strong>from</strong> 后，也可以在 <strong>where</strong> 后</p>
+<ul>
+<li>多行单列<code>sal &gt; ALL(查找语句)</code> or<code>sal &gt; ANY (查找语句)</code>  <code>IN</code></li>
+<li>单行多列<code>select * from table_1 where (col_1,col_20) IN (select col_1,col_2 from table_2 where 条件)</code></li>
+<li>多行多列<code>select * from table_1 别名1,(select ...)别名2 where 条件</code></li>
+</ul>
+<p>关键字执行顺序（<strong>select、from、where、group by、having、order by</strong>）</p>
+<h2 id="数据的备份与恢复">数据的备份与恢复</h2>
+<ul>
+<li><code>mysqldump -p用户名 -u密码 数据库名&gt;路径</code></li>
+<li><code>mysqldump -p用户名 -u密码 数据库名&lt;路径</code></li>
+<li><code>在客户端里面 source 路径名</code></li>
+</ul>
+<h2 id="约束">约束</h2>
+<ul>
+<li>PRIMARY KEY</li>
+<li>NOT NULL</li>
+<li>UNIQUE</li>
+<li>AUTO_INCREMENT</li>
+<li><code>CONSTRAINT 约束名fk_从表_主表 FOREIGN KEY(本表被约束属性) CONFERENCES 主表(主表的主键)</code></li>
+</ul>
+<h4 id="合并结果集">合并结果集</h4>
+<pre><code class="language-sql">select a , b from table_1
+union all
+select c , d from table_2
+on 条件
+</code></pre>
+<p>加上<code>all</code>全部显示，不加的话完全相同的行会消除</p>
+', firstPicture='https://picsum.photos/id/1011/800/400', flag='原创', views=0, appreciation=false, shareStatement=true, commentabled=true, published=true, recommend=true, createTime=2020-01-18 16:34:11.0, updateTime=2020-01-18 21:37:21.0}
+2020-01-18 21:37:37.524  INFO 12636 --- [http-nio-8080-exec-7] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:37:37.525  INFO 12636 --- [http-nio-8080-exec-7] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn blog
+2020-01-18 21:37:37.550 ERROR 12636 --- [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: org.attoparser.ParseException: An error happened during template rendering
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateOutputException: An error happened during template rendering
+	at org.thymeleaf.engine.OutputTemplateHandler.handleText(OutputTemplateHandler.java:75)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleText(ProcessorTemplateHandler.java:587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleText(TemplateHandlerAdapterMarkupHandler.java:218)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleText(InlinedOutputExpressionMarkupHandler.java:232)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:136)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:557)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "#blog.serurl" (template: "blog" - line 484, col 26)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.process(TemplateManager.java:519)
+	at org.thymeleaf.util.LazyProcessingCharSequence.writeUnresolved(LazyProcessingCharSequence.java:85)
+	at org.thymeleaf.util.AbstractLazyCharSequence.write(AbstractLazyCharSequence.java:103)
+	at org.thymeleaf.engine.AbstractTextualTemplateEvent.writeContent(AbstractTextualTemplateEvent.java:224)
+	at org.thymeleaf.engine.Text.write(Text.java:78)
+	at org.thymeleaf.engine.OutputTemplateHandler.handleText(OutputTemplateHandler.java:71)
+	... 59 common frames omitted
+
+2020-01-18 21:37:37.553 ERROR 12636 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "#blog.serurl" (template: "blog" - line 484, col 26)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.process(TemplateManager.java:519)
+	at org.thymeleaf.util.LazyProcessingCharSequence.writeUnresolved(LazyProcessingCharSequence.java:85)
+	at org.thymeleaf.util.AbstractLazyCharSequence.write(AbstractLazyCharSequence.java:103)
+	at org.thymeleaf.engine.AbstractTextualTemplateEvent.writeContent(AbstractTextualTemplateEvent.java:224)
+	at org.thymeleaf.engine.Text.write(Text.java:78)
+	at org.thymeleaf.engine.OutputTemplateHandler.handleText(OutputTemplateHandler.java:71)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleText(ProcessorTemplateHandler.java:587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleText(TemplateHandlerAdapterMarkupHandler.java:218)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleText(InlinedOutputExpressionMarkupHandler.java:232)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleText(OutputExpressionInlinePreProcessorHandler.java:136)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleText(InlinedOutputExpressionMarkupHandler.java:80)
+	at org.attoparser.HtmlMarkupHandler.handleText(HtmlMarkupHandler.java:208)
+	at org.attoparser.AbstractChainedMarkupHandler.handleText(AbstractChainedMarkupHandler.java:203)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:557)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2020-01-18 21:37:37.568 ERROR 12636 --- [http-nio-8080-exec-7] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/blog/41] and exception [An error happened during template parsing (template: "class path resource [templates/blog.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+2020-01-18 21:37:37.917  INFO 12636 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:37:37.922  INFO 12636 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:37:37.922  INFO 12636 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:43:26.742  INFO 12636 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:43:26.751  INFO 12636 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:43:26.766  INFO 12636 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:43:28.675  INFO 12636 --- [http-nio-8080-exec-3] com.yang.blog.web.admin.BlogController   : 访问list
+2020-01-18 21:43:28.840  INFO 12636 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:43:28.850  INFO 12636 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:43:28.851  INFO 12636 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:43:33.346  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.web.admin.BlogController   : 修改blog
+2020-01-18 21:43:33.530  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:43:33.535  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:43:33.536  INFO 12636 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:44:03.560  INFO 12636 --- [http-nio-8080-exec-7] com.yang.blog.web.admin.BlogController   : 提交增加blog
+2020-01-18 21:44:03.586  INFO 12636 --- [http-nio-8080-exec-8] com.yang.blog.web.admin.BlogController   : 访问list
+2020-01-18 21:44:03.780  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:44:03.789  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:44:03.789  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:44:16.064  INFO 12636 --- [http-nio-8080-exec-8] com.yang.blog.web.admin.BlogController   : 修改blog
+2020-01-18 21:44:16.214  INFO 12636 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:44:16.220  INFO 12636 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:44:16.221  INFO 12636 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:44:19.909  INFO 12636 --- [http-nio-8080-exec-10] com.yang.blog.web.admin.BlogController   : 提交增加blog
+2020-01-18 21:44:19.933  INFO 12636 --- [http-nio-8080-exec-2] com.yang.blog.web.admin.BlogController   : 访问list
+2020-01-18 21:44:20.080  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:44:20.085  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:44:20.086  INFO 12636 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:44:25.390  INFO 12636 --- [http-nio-8080-exec-2] com.yang.blog.web.admin.BlogController   : 修改blog
+2020-01-18 21:44:25.545  INFO 12636 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:44:25.551  INFO 12636 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:44:25.551  INFO 12636 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-01-18 21:44:32.872  INFO 12636 --- [http-nio-8080-exec-3] com.yang.blog.web.admin.BlogController   : 提交增加blog
+2020-01-18 21:44:32.901  INFO 12636 --- [http-nio-8080-exec-7] com.yang.blog.web.admin.BlogController   : 访问list
+2020-01-18 21:44:33.123  INFO 12636 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-01-18 21:44:33.129  INFO 12636 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-01-18 21:44:33.129  INFO 12636 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
