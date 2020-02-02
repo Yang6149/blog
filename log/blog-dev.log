@@ -1,47 +1,117 @@
-2020-01-31 19:41:11.083  INFO 13796 --- [restartedMain] com.yang.blog.BlogApplication            : Starting BlogApplication on DESKTOP-IHFCB9J with PID 13796 (C:\Users\hasaki\IdeaProjects\blog\target\classes started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
-2020-01-31 19:41:11.103 DEBUG 13796 --- [restartedMain] com.yang.blog.BlogApplication            : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
-2020-01-31 19:41:11.104  INFO 13796 --- [restartedMain] com.yang.blog.BlogApplication            : The following profiles are active: dev
-2020-01-31 19:41:11.550  INFO 13796 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\hasaki\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2020-01-31 19:41:11.554  INFO 13796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-01-31 19:41:11.560  INFO 13796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-01-31 19:41:13.798  INFO 13796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-01-31 19:41:13.942  INFO 13796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134ms. Found 5 JPA repository interfaces.
-2020-01-31 19:41:14.337  INFO 13796 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-01-31 19:41:16.954  INFO 13796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-01-31 19:41:16.972  INFO 13796 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-01-31 19:41:16.974  INFO 13796 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-01-31 19:41:16.980  INFO 13796 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
-2020-01-31 19:41:16.985  INFO 13796 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2020-01-31 19:41:16.986  INFO 13796 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2020-01-31 19:41:16.999  INFO 13796 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
-2020-01-31 19:41:17.160  INFO 13796 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-01-31 19:41:17.161  INFO 13796 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5598 ms
-2020-01-31 19:41:17.657  INFO 13796 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-01-31 19:41:17.778  INFO 13796 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2020-01-31 19:41:17.967  INFO 13796 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-01-31 19:41:18.151  INFO 13796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-01-31 19:41:18.417  INFO 13796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-01-31 19:41:18.441  INFO 13796 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
-2020-01-31 19:41:19.575  INFO 13796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-01-31 19:41:19.584  INFO 13796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-01-31 19:41:19.666  INFO 13796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-01-31 19:41:20.618  WARN 13796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-31 19:41:20.921  INFO 13796 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-01-31 19:41:21.043  INFO 13796 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-01-31 19:41:21.753  INFO 13796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-01-31 19:41:21.757  INFO 13796 --- [restartedMain] com.yang.blog.BlogApplication            : Started BlogApplication in 12.031 seconds (JVM running for 14.51)
-2020-01-31 19:41:31.588  INFO 13796 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-01-31 19:41:31.589  INFO 13796 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-01-31 19:41:31.611  INFO 13796 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
-2020-01-31 19:41:31.663  INFO 13796 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.index', args=[Page request [number: 0, size 10, sort: id: DESC], {}]}
-2020-01-31 19:41:32.053  INFO 13796 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfter
-2020-01-31 19:41:32.054  INFO 13796 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn index
-2020-01-31 19:41:34.820  INFO 13796 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
-2020-01-31 19:41:34.872  INFO 13796 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfter
-2020-01-31 19:41:34.873  INFO 13796 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
-2020-01-31 19:41:52.794  INFO 13796 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.AboutController.about', args=[]}
-2020-01-31 19:41:52.801  INFO 13796 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfter
-2020-01-31 19:41:52.802  INFO 13796 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn about
-2020-01-31 19:41:53.290  INFO 13796 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
-2020-01-31 19:41:53.300  INFO 13796 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfter
-2020-01-31 19:41:53.300  INFO 13796 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 21:41:09.972  INFO 12348 --- [restartedMain] com.yang.blog.BlogApplication            : Starting BlogApplication on DESKTOP-IHFCB9J with PID 12348 (C:\Users\hasaki\IdeaProjects\blog\target\classes started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2020-02-01 21:41:09.987 DEBUG 12348 --- [restartedMain] com.yang.blog.BlogApplication            : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-02-01 21:41:09.988  INFO 12348 --- [restartedMain] com.yang.blog.BlogApplication            : The following profiles are active: dev
+2020-02-01 21:41:10.068  INFO 12348 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\hasaki\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/hasaki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-01 21:41:10.069  INFO 12348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-01 21:41:10.070  INFO 12348 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-01 21:41:11.456  INFO 12348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-01 21:41:11.578  INFO 12348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 5 JPA repository interfaces.
+2020-02-01 21:41:11.997  INFO 12348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-01 21:41:14.490  INFO 12348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-01 21:41:14.505  INFO 12348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-01 21:41:14.505  INFO 12348 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-02-01 21:41:14.509  INFO 12348 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-02-01 21:41:14.509  INFO 12348 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-01 21:41:14.509  INFO 12348 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-01 21:41:14.537  INFO 12348 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-02-01 21:41:14.666  INFO 12348 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-01 21:41:14.667  INFO 12348 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4597 ms
+2020-02-01 21:41:14.925  INFO 12348 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-01 21:41:15.030  INFO 12348 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-02-01 21:41:15.769  INFO 12348 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-01 21:41:16.117  INFO 12348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-01 21:41:16.669  INFO 12348 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-01 21:41:16.692  INFO 12348 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-02-01 21:41:17.732  INFO 12348 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-01 21:41:17.739  INFO 12348 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-01 21:41:17.810  INFO 12348 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-01 21:41:18.711  WARN 12348 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-01 21:41:19.003  INFO 12348 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-01 21:41:19.217  INFO 12348 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-01 21:41:19.809  INFO 12348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-01 21:41:19.813  INFO 12348 --- [restartedMain] com.yang.blog.BlogApplication            : Started BlogApplication in 11.048 seconds (JVM running for 14.485)
+2020-02-01 21:42:46.979  INFO 12348 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-01 21:42:46.981  INFO 12348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-01 21:42:47.007  INFO 12348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2020-02-01 21:42:47.076  INFO 12348 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.index', args=[Page request [number: 0, size 10, sort: id: DESC], {}]}
+2020-02-01 21:42:47.429  INFO 12348 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:42:47.430  INFO 12348 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn index
+2020-02-01 21:42:49.597  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 21:42:49.649  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:42:49.649  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 21:42:59.986  WARN 12348 --- [http-nio-8080-exec-6] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [228] milliseconds.
+2020-02-01 21:43:00.219  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 21:43:00.230  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:43:00.230  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 21:43:01.911  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.web.admin.BlogController   : 访问list
+2020-02-01 21:43:02.396  INFO 12348 --- [http-nio-8080-exec-7] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 21:43:02.406  INFO 12348 --- [http-nio-8080-exec-7] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:43:02.406  INFO 12348 --- [http-nio-8080-exec-7] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 21:43:17.508  INFO 12348 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 21:43:17.522  INFO 12348 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:43:17.522  INFO 12348 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 21:43:18.417  INFO 12348 --- [http-nio-8080-exec-8] com.yang.blog.web.admin.BlogController   : 访问list
+2020-02-01 21:43:18.615  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 21:43:18.623  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:43:18.623  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 21:43:22.707  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.index', args=[Page request [number: 0, size 10, sort: id: DESC], {}]}
+2020-02-01 21:43:22.736  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:43:22.736  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn index
+2020-02-01 21:43:23.791  INFO 12348 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 21:43:23.799  INFO 12348 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:43:23.799  INFO 12348 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 21:43:35.351  INFO 12348 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 21:43:35.361  INFO 12348 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:43:35.361  INFO 12348 --- [http-nio-8080-exec-6] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 21:43:36.444  INFO 12348 --- [http-nio-8080-exec-4] com.yang.blog.web.admin.BlogController   : 访问list
+2020-02-01 21:43:36.746  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 21:43:36.754  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:43:36.754  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 21:43:48.292  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.index', args=[Page request [number: 0, size 10, sort: id: DESC], {}]}
+2020-02-01 21:43:48.319  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:43:48.319  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn index
+2020-02-01 21:43:48.934  INFO 12348 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 21:43:48.940  INFO 12348 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:43:48.940  INFO 12348 --- [http-nio-8080-exec-4] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 21:45:37.110  INFO 12348 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.index', args=[Page request [number: 0, size 10, sort: id: DESC], {}]}
+2020-02-01 21:45:37.138  INFO 12348 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:45:37.139  INFO 12348 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn index
+2020-02-01 21:45:38.899  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 21:45:38.907  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 21:45:38.907  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 22:05:53.316  INFO 12348 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.index', args=[Page request [number: 0, size 10, sort: id: DESC], {}]}
+2020-02-01 22:05:53.521  INFO 12348 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 22:05:53.523  INFO 12348 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn index
+2020-02-01 22:05:54.418  INFO 12348 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 22:05:54.433  INFO 12348 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 22:05:54.437  INFO 12348 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 22:05:58.816  INFO 12348 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 22:05:58.823  INFO 12348 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 22:05:58.824  INFO 12348 --- [http-nio-8080-exec-1] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 22:06:00.436  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.web.admin.BlogController   : 访问list
+2020-02-01 22:06:00.679  INFO 12348 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 22:06:00.687  INFO 12348 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 22:06:00.687  INFO 12348 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 22:06:02.381  INFO 12348 --- [http-nio-8080-exec-7] com.yang.blog.web.admin.BlogController   : 访问list
+2020-02-01 22:06:02.643  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 22:06:02.652  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 22:06:02.652  INFO 12348 --- [http-nio-8080-exec-5] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 22:06:20.612  INFO 12348 --- [http-nio-8080-exec-3] com.yang.blog.web.admin.BlogController   : 访问list
+2020-02-01 22:06:20.900  INFO 12348 --- [http-nio-8080-exec-7] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 22:06:20.908  INFO 12348 --- [http-nio-8080-exec-7] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 22:06:20.909  INFO 12348 --- [http-nio-8080-exec-7] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 22:06:22.463  INFO 12348 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 22:06:22.468  INFO 12348 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 22:06:22.468  INFO 12348 --- [http-nio-8080-exec-8] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 22:06:23.002  INFO 12348 --- [http-nio-8080-exec-3] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 22:06:23.010  INFO 12348 --- [http-nio-8080-exec-3] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 22:06:23.011  INFO 12348 --- [http-nio-8080-exec-3] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 22:06:23.126  INFO 12348 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.AboutController.about', args=[]}
+2020-02-01 22:06:23.175  INFO 12348 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 22:06:23.175  INFO 12348 --- [http-nio-8080-exec-9] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn about
+2020-02-01 22:06:23.708  INFO 12348 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 22:06:23.715  INFO 12348 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 22:06:23.715  INFO 12348 --- [http-nio-8080-exec-10] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList
+2020-02-01 22:06:29.112  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : Request: RequestLog{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.yang.blog.web.IndexController.newblogs', args=[{}]}
+2020-02-01 22:06:29.118  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfter
+2020-02-01 22:06:29.119  INFO 12348 --- [http-nio-8080-exec-2] com.yang.blog.aspect.LogAspect           : -------------doAfterReturn _fragments :: newblogList

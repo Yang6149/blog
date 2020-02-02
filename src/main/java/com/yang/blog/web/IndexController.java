@@ -32,7 +32,6 @@ public class IndexController {
         model.addAttribute("tags",tagService.listTag());
         model.addAttribute("types",typeService.listType());
         model.addAttribute("recommendBlogs",blogService.recommentBlog());
-        System.out.println("print-----------");
         return "index";
     }
 

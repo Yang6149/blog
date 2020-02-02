@@ -18,7 +18,7 @@ public class LogAspect {
     private Logger logger=LoggerFactory.getLogger(this.getClass());
     @Pointcut("execution(* com.yang.blog.web.*.*(..))")
     public void log(){
-
+        logger.info("Pointer");
     }
     @Before("log()")
     public void doBefore(JoinPoint joinPoint){
