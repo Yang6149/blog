@@ -16,12 +16,12 @@ public class GetPageTest extends BlogApplicationTests {
     @Test
     public void getAllBlogTest(){
         long start = System.currentTimeMillis();
-        ExecutorService exe = Executors.newFixedThreadPool(10000);
+        //ExecutorService exe = Executors.newFixedThreadPool(10000);
         for (int i = 0; i < 10000; i++) {
-            exe.execute(()->blogService.listRedisBlog());
-            //blogService.listRedisBlog();
+            //exe.execute(()->blogService.listRedisBlog());
+            blogService.listRedisBlog();
         }
-        exe.shutdown();
+        //exe.shutdown();
         System.out.println("------------"+(System.currentTimeMillis()-start)+"-----------");
     }
 

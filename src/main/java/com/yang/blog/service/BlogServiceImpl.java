@@ -15,6 +15,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.RedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -52,28 +54,55 @@ public class BlogServiceImpl implements BlogService{
 
     @Override
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
-        return repository.findAll(new Specification<Blog>() {
-            @Override
-            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
-                List<Predicate> predicates = new ArrayList<>();
-                if(!"".equals(blog.getTitle())&&blog.getTitle()!=null){
-                    predicates.add(criteriaBuilder.like(root.<String>get("title"),"%"+blog.getTitle()+"%"));
-                }
-                if(blog.getTypeId()!=null){
-                    predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"),blog.getTypeId()));
-                }
-                if(blog.isRecommend()){
-                    predicates.add(criteriaBuilder.equal(root.<Boolean>get("recommend"),blog.isRecommend()));
-                }
+        List<Object>list = redisTemplate.opsForList().range("page"+pageable.getPageNumber(),0,-1);
+        Date saveTime =null;
+        Date pageTime =null;
+        Page<Blog> page = null;
+        if(list.size()==2){
+            saveTime = (Date)redisTemplate.opsForValue().get("saveTime");
+            pageTime = (Date)list.get(0);
+            page = (Page<Blog>) list.get(1);
 
-                criteriaQuery.where(predicates.toArray(new Predicate[predicates.size()]));
-                return null;
+        }
+        if(list.size()<2||(saveTime!=null&&saveTime.compareTo(pageTime)>0)){
+            synchronized(this){
+                if (list.size()<2||saveTime.compareTo(pageTime)>0){
+                    System.out.println("更新---------------------------------------");
+                    RedisSerializer<String> serializer = new StringRedisSerializer();
+                    redisTemplate.setKeySerializer(serializer);
+                    page = repository.findAll(new Specification<Blog>() {
+                        @Override
+                        public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                            List<Predicate> predicates = new ArrayList<>();
+                            if(!"".equals(blog.getTitle())&&blog.getTitle()!=null){
+                                predicates.add(criteriaBuilder.like(root.<String>get("title"),"%"+blog.getTitle()+"%"));
+                            }
+                            if(blog.getTypeId()!=null){
+                                predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"),blog.getTypeId()));
+                            }
+                            if(blog.isRecommend()){
+                                predicates.add(criteriaBuilder.equal(root.<Boolean>get("recommend"),blog.isRecommend()));
+                            }
+
+                            criteriaQuery.where(predicates.toArray(new Predicate[predicates.size()]));
+                            return null;
+                        }
+                    },pageable);
+                    redisTemplate.delete("page"+pageable.getPageNumber());
+                    redisTemplate.opsForList().rightPush("page"+pageable.getPageNumber(),new Date());
+                    redisTemplate.opsForList().rightPush("page"+pageable.getPageNumber(),page);
+
+                }
             }
-        },pageable);
+        }
+        return page;
     }
 
     @Override
     public Blog saveBlog(Blog blog) {
+        int incre=0;
+
+        redisTemplate.opsForValue().set("saveTime",new Date());
         blog.setCreateTime(new Date());
         blog.setUpdateTime(new Date());
         blog.setViews(0);
@@ -119,6 +148,8 @@ public class BlogServiceImpl implements BlogService{
 
     @Override
     public List<Blog> listRedisBlog(){
+        RedisSerializer<String> serializer = new StringRedisSerializer();
+        redisTemplate.setKeySerializer(serializer);
         List<Blog> list = (List<Blog>) redisTemplate.opsForValue().get("allList");
         if(list==null){
             redisTemplate.opsForValue().set("allList",listBlog());
