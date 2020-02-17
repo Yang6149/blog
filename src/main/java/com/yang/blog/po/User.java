@@ -1,13 +1,14 @@
 package com.yang.blog.po;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "t_user")
-public class User {
+public class User implements Serializable {
     @Id
     @GeneratedValue
     private long id;

@@ -24,6 +24,8 @@ public interface BlogService {
 
     List<Blog> listBlog();
 
+    List<Blog> listRedisBlog();
+
     int count();
 
     List<Blog> recommentBlog();

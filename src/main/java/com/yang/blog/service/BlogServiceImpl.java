@@ -14,6 +14,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -26,6 +27,9 @@ import java.util.List;
 
 @Service
 public class BlogServiceImpl implements BlogService{
+
+    @Autowired
+    private RedisTemplate<Object,Object> redisTemplate;
     @Autowired
     private BlogRepository repository;
     @Override
@@ -111,6 +115,15 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public List<Blog> listBlog() {
         return repository.findAll();
+    }
+
+    @Override
+    public List<Blog> listRedisBlog(){
+        List<Blog> list = (List<Blog>) redisTemplate.opsForValue().get("allList");
+        if(list==null){
+            redisTemplate.opsForValue().set("allList",listBlog());
+        }
+        return list;
     }
 
     @Override
