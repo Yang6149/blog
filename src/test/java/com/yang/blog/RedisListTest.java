@@ -1,5 +1,6 @@
 package com.yang.blog;
 
+import com.yang.blog.dao.BlogRepository;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -11,6 +12,8 @@ import java.util.Date;
 public class RedisListTest extends BlogApplicationTests {
     @Autowired
     RedisTemplate<Object,Object> redisTemplate;
+    @Autowired
+    BlogRepository repository;
     @Test
     public void test(){
         RedisSerializer<String> serializer = new StringRedisSerializer();
@@ -19,4 +22,5 @@ public class RedisListTest extends BlogApplicationTests {
         redisTemplate.opsForList().leftPush("lilii",222);
         System.out.println(redisTemplate.opsForList().range("lilii",0,-1));
     }
+
 }
