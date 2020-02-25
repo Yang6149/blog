@@ -1,0 +1,17 @@
+2020-02-07 02:31:52.975  INFO 4396 --- [restartedMain] com.yang.blog.BlogApplication            : Starting BlogApplication on DESKTOP-IHFCB9J with PID 4396 (C:\Users\hasaki\IdeaProjects\blog\target\classes started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2020-02-07 02:31:52.999  INFO 4396 --- [restartedMain] com.yang.blog.BlogApplication            : The following profiles are active: pro
+2020-02-07 02:31:58.429  WARN 4396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-07 02:32:00.718 ERROR 4396 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+

@@ -1,0 +1,4 @@
+2020-02-03 21:45:12.286  INFO 15356 --- [main] com.yang.blog.BlogApplicationTests       : Starting BlogApplicationTests on DESKTOP-IHFCB9J with PID 15356 (started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2020-02-03 21:45:12.292  INFO 15356 --- [main] com.yang.blog.BlogApplicationTests       : The following profiles are active: pro
+2020-02-03 21:45:20.769  WARN 15356 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-03 21:45:22.289  INFO 15356 --- [main] com.yang.blog.BlogApplicationTests       : Started BlogApplicationTests in 10.824 seconds (JVM running for 12.713)

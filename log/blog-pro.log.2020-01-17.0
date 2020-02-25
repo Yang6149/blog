@@ -1,0 +1,25 @@
+2020-01-17 15:39:03.312  INFO 4212 --- [restartedMain] com.yang.blog.BlogApplication            : Starting BlogApplication on DESKTOP-IHFCB9J with PID 4212 (C:\Users\hasaki\IdeaProjects\blog\target\classes started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2020-01-17 15:39:03.360  INFO 4212 --- [restartedMain] com.yang.blog.BlogApplication            : The following profiles are active: pro
+2020-01-17 15:39:08.876  WARN 4212 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-17 15:39:09.694 ERROR 4212 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-01-17 15:45:44.637  INFO 10116 --- [main] com.yang.blog.BlogApplicationTests       : Starting BlogApplicationTests on DESKTOP-IHFCB9J with PID 10116 (started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2020-01-17 15:45:44.643  INFO 10116 --- [main] com.yang.blog.BlogApplicationTests       : The following profiles are active: pro
+2020-01-17 15:45:54.976  WARN 10116 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-17 15:45:57.031  INFO 10116 --- [main] com.yang.blog.BlogApplicationTests       : Started BlogApplicationTests in 13.565 seconds (JVM running for 15.97)
+2020-01-17 15:51:34.673  INFO 3640 --- [restartedMain] com.yang.blog.BlogApplication            : Starting BlogApplication on DESKTOP-IHFCB9J with PID 3640 (C:\Users\hasaki\IdeaProjects\blog\target\classes started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2020-01-17 15:51:34.678  INFO 3640 --- [restartedMain] com.yang.blog.BlogApplication            : The following profiles are active: pro
+2020-01-17 15:51:39.482  WARN 3640 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-17 15:51:40.233  INFO 3640 --- [restartedMain] com.yang.blog.BlogApplication            : Started BlogApplication in 6.481 seconds (JVM running for 8.503)
