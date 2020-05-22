@@ -7,6 +7,8 @@ import com.yang.blog.vo.BlogQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +22,7 @@ public class TypeSearchController {
     @Autowired
     private TypeService typeService;
     @GetMapping("/types")
-    public String tags(Model model, Pageable pageable){
+    public String tags(Model model,@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable){
 
         model.addAttribute("page",blogService.listBlog(pageable,new BlogQuery()));
         model.addAttribute("types",typeService.listType(pageable));
@@ -29,11 +31,9 @@ public class TypeSearchController {
     }
 
     @GetMapping("/types/{id}")
-    public String tags(@PathVariable Long id, Model model, Pageable pageable){
+    public String tags(@PathVariable Long id, Model model,@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable){
 
-        BlogQuery bq=new BlogQuery();
-        bq.setTypeId(id);
-        model.addAttribute("page",blogService.listBlog(pageable,bq));
+        model.addAttribute("page",new PageImpl<Blog>(typeService.getType(id).getBlogs()));
         model.addAttribute("types",typeService.listType(pageable));
         model.addAttribute("avtiveTypeId",id);
         return "types";

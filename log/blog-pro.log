@@ -1,17 +1,16 @@
-2020-02-07 02:31:52.975  INFO 4396 --- [restartedMain] com.yang.blog.BlogApplication            : Starting BlogApplication on DESKTOP-IHFCB9J with PID 4396 (C:\Users\hasaki\IdeaProjects\blog\target\classes started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
-2020-02-07 02:31:52.999  INFO 4396 --- [restartedMain] com.yang.blog.BlogApplication            : The following profiles are active: pro
-2020-02-07 02:31:58.429  WARN 4396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-02-07 02:32:00.718 ERROR 4396 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 80 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
-
+2020-05-22 17:40:31.254  INFO 30068 --- [main] com.yang.blog.BlogApplicationTests       : Starting BlogApplicationTests on DESKTOP-IHFCB9J with PID 30068 (started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2020-05-22 17:40:31.271  INFO 30068 --- [main] com.yang.blog.BlogApplicationTests       : The following profiles are active: pro
+2020-05-22 17:40:43.336  WARN 30068 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 17:40:47.136  INFO 30068 --- [main] com.yang.blog.BlogApplicationTests       : Started BlogApplicationTests in 17.146 seconds (JVM running for 19.299)
+2020-05-22 17:58:37.900  INFO 11120 --- [main] com.yang.blog.BlogApplicationTests       : Starting BlogApplicationTests on DESKTOP-IHFCB9J with PID 11120 (started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2020-05-22 17:58:37.903  INFO 11120 --- [main] com.yang.blog.BlogApplicationTests       : The following profiles are active: pro
+2020-05-22 17:58:53.355  WARN 11120 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 17:58:57.967  INFO 11120 --- [main] com.yang.blog.BlogApplicationTests       : Started BlogApplicationTests in 21.483 seconds (JVM running for 24.692)
+2020-05-22 18:34:44.616  INFO 33092 --- [main] com.yang.blog.BlogApplicationTests       : Starting BlogApplicationTests on DESKTOP-IHFCB9J with PID 33092 (started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2020-05-22 18:34:44.621  INFO 33092 --- [main] com.yang.blog.BlogApplicationTests       : The following profiles are active: pro
+2020-05-22 18:34:55.891  WARN 33092 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 18:34:59.331  INFO 33092 --- [main] com.yang.blog.BlogApplicationTests       : Started BlogApplicationTests in 15.712 seconds (JVM running for 17.677)
+2020-05-22 18:37:59.367  INFO 12668 --- [main] com.yang.blog.BlogApplicationTests       : Starting BlogApplicationTests on DESKTOP-IHFCB9J with PID 12668 (started by hasaki in C:\Users\hasaki\IdeaProjects\blog)
+2020-05-22 18:37:59.380  INFO 12668 --- [main] com.yang.blog.BlogApplicationTests       : The following profiles are active: pro
+2020-05-22 18:38:10.051  WARN 12668 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-22 18:38:13.438  INFO 12668 --- [main] com.yang.blog.BlogApplicationTests       : Started BlogApplicationTests in 15.045 seconds (JVM running for 16.877)

@@ -105,7 +105,6 @@ public class BlogServiceImpl implements BlogService{
         redisTemplate.opsForValue().set("saveTime",new Date());
         blog.setCreateTime(new Date());
         blog.setUpdateTime(new Date());
-        blog.setViews(0);
         return repository.save(blog);
     }
 
@@ -117,6 +116,7 @@ public class BlogServiceImpl implements BlogService{
 
     @Override
     public Blog updateBlog(Long id, Blog blog) {
+        redisTemplate.opsForValue().set("saveTime",new Date());
         Blog b=repository.getOne(id);
         BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
         b.setUpdateTime(new Date());
@@ -164,8 +164,7 @@ public class BlogServiceImpl implements BlogService{
 
     @Override
     public List<Blog> recommentBlog() {
-
-        return repository.findAll(new Specification<Blog>() {
+        List<Blog> temp = repository.findAll(new Specification<Blog>() {
             @Override
             public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
                 List<Predicate> predicates = new ArrayList<>();
@@ -174,6 +173,11 @@ public class BlogServiceImpl implements BlogService{
                 return null;
             }
         });
+        List<Blog> res = new ArrayList<>();
+        for(int i = temp.size()-1;i>=temp.size()-10&&i>=0;i--){
+            res.add(temp.get(i));
+        }
+        return res;
     }
 
     @Override

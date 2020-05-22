@@ -33,7 +33,7 @@ public class Blog implements Serializable {
     private Date updateTime;
     @ManyToOne
     private Type type;
-    @ManyToMany(cascade = {CascadeType.PERSIST})
+    @ManyToMany(fetch=FetchType.EAGER,cascade = {CascadeType.PERSIST})
     private List<Tag> tags=new ArrayList<>();
     @ManyToOne
     private User user;
