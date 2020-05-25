@@ -40,9 +40,7 @@ public class IndexController {
         Blog b=blogService.getAndConvert(id);
         //Blog b=blogService.getBlog(id);
         System.out.println(b.getViews()+"after");
-        b.setViews(b.getViews()+1);
         System.out.println(b.getViews()+"after");
-        blogService.saveBlog(b);
         logger.info(b.toString());
         if(b.getComments()!=null){
             model.addAttribute("comments",b.getComments());

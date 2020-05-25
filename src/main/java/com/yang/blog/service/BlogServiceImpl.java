@@ -42,6 +42,7 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public Blog getAndConvert(Long id) {
         Blog blog = repository.getOne(id);
+        updateBlogView(blog);
         if(blog == null){
             throw new NotFoundException("该博客不存在");
         }
@@ -105,6 +106,17 @@ public class BlogServiceImpl implements BlogService{
         redisTemplate.opsForValue().set("saveTime",new Date());
         blog.setCreateTime(new Date());
         blog.setUpdateTime(new Date());
+        return repository.save(blog);
+    }
+    @Override
+    public Blog updateBlogView(Blog blog) {
+        int incre=0;
+        Integer i = blog.getViews();
+        if(i==null){
+            i=1;
+        }
+        blog.setViews(i+1);
+        //redisTemplate.opsForValue().set("saveTime",new Date());
         return repository.save(blog);
     }
 
