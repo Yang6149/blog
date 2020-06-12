@@ -30,7 +30,7 @@ public class IndexController {
     public String index(@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable,Model model){
         model.addAttribute("page",blogService.listBlog(pageable,new BlogQuery()));
         model.addAttribute("tags",tagService.listTag());
-        model.addAttribute("types",typeService.listType());
+        model.addAttribute("types",typeService.listType(pageable));
         model.addAttribute("recommendBlogs",blogService.recommentBlog());
         return "index";
     }

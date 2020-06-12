@@ -14,6 +14,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
 public class TagsSearchController {
     @Autowired
@@ -33,8 +36,12 @@ public class TagsSearchController {
     @GetMapping("/tags/{id}")
     public String tags(@PathVariable Long id, Model model,@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable){
 
-
-        model.addAttribute("page",new PageImpl<Blog>(tagService.getTag(id).getBlogs()));
+        List<Blog> blogs = tagService.getTag(id).getBlogs();
+        List<Blog> blogRes = new ArrayList<>();
+        for(int i = blogs.size()-1;i>=0;i--){
+            blogRes.add(blogs.get(i));
+        }
+        model.addAttribute("page",new PageImpl<Blog>(blogRes));
         model.addAttribute("tags",tagService.listTag(pageable));
         model.addAttribute("avtiveTagId",id);
         return "tags";

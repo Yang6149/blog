@@ -65,30 +65,18 @@ public class BlogServiceImpl implements BlogService{
             page = (Page<Blog>) list.get(1);
 
         }
+        if(blog.getTitle()!=null){
+            page = repository.findAll(QueryPage(blog),pageable);
+            return page;
+        }
+        System.out.println(blog.getTitle()+"alsdjasld");
         if(list.size()<2||(saveTime!=null&&saveTime.compareTo(pageTime)>0)){
             synchronized(this){
                 if (list.size()<2||saveTime.compareTo(pageTime)>0){
                     System.out.println("更新---------------------------------------");
                     RedisSerializer<String> serializer = new StringRedisSerializer();
                     redisTemplate.setKeySerializer(serializer);
-                    page = repository.findAll(new Specification<Blog>() {
-                        @Override
-                        public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
-                            List<Predicate> predicates = new ArrayList<>();
-                            if(!"".equals(blog.getTitle())&&blog.getTitle()!=null){
-                                predicates.add(criteriaBuilder.like(root.<String>get("title"),"%"+blog.getTitle()+"%"));
-                            }
-                            if(blog.getTypeId()!=null){
-                                predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"),blog.getTypeId()));
-                            }
-                            if(blog.isRecommend()){
-                                predicates.add(criteriaBuilder.equal(root.<Boolean>get("recommend"),blog.isRecommend()));
-                            }
-
-                            criteriaQuery.where(predicates.toArray(new Predicate[predicates.size()]));
-                            return null;
-                        }
-                    },pageable);
+                    page = repository.findAll(QueryPage(blog),pageable);
                     redisTemplate.delete("page"+pageable.getPageNumber());
                     redisTemplate.opsForList().rightPush("page"+pageable.getPageNumber(),new Date());
                     redisTemplate.opsForList().rightPush("page"+pageable.getPageNumber(),page);
@@ -97,6 +85,28 @@ public class BlogServiceImpl implements BlogService{
             }
         }
         return page;
+    }
+
+    public Specification<Blog> QueryPage(BlogQuery blog){
+        return new Specification<Blog>() {
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                List<Predicate> predicates = new ArrayList<>();
+                if(!"".equals(blog.getTitle())&&blog.getTitle()!=null){
+                    predicates.add(criteriaBuilder.like(root.<String>get("title"),"%"+blog.getTitle()+"%"));
+                }
+                if(blog.getTypeId()!=null){
+                    predicates.add(criteriaBuilder.equal(root.<Type>get("type").get("id"),blog.getTypeId()));
+                }
+                if(blog.isRecommend()){
+                    predicates.add(criteriaBuilder.equal(root.<Boolean>get("recommend"),blog.isRecommend()));
+                }
+
+                criteriaQuery.where(predicates.toArray(new Predicate[predicates.size()]));
+                return null;
+            }
+        };
+
     }
 
     @Override
